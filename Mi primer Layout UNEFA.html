@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi primer Layout UNEFA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+     <div id="Layout-Principal">
+        
+     <header class="Top-Superior">
+    
+    <span>Mi Tienda de Adopción UNEFA</span>.              </header>
+
+      <aside class="Sidebar">
+            <h3 class="Sidebar-Titulo">Categorías</h3>
+   <div class="menu-item">Perros</div>
+   <div class="menu-item">Gatos</div>
+   <div class="menu-item">Alimento</div>
+   <div class="menu-item">Juguetes</div>
+   <div class="menu-item">Ajustes</div>
+        </aside>
+
+        <main class="Top-Central">
+        <article class="card-mascota">    
+        <div class="huella-contenedor">
+        
+                
+       <h1 class="Titulo-1">Bienvenido a la Tienda de Adopción</h1>
+       <p>Dale un hogar a estos amiguito caninos y felinos aquí te esperamos.  </p>
+             
+        </article>
+        </main>
+
+      <footer class="Top-Inferior">
+      <p class="Titulo-2"> Desarrollado por Enyer 2026 </p>
+     </footer>
+      </div>
+
+    <style>
+        
+      { margin: 0; padding: 0; box-sizing: border-box; }
+
+       #Layout-Principal {
+         display: grid;
+         grid-template-columns: 180px 1fr;
+         grid-template-rows: 80px 1fr 40px;
+         height: 100vh;
+         font-family: 'Segoe UI',  sans-serif;
+         }
+        
+      .Top-Superior {
+         grid-area: 1 / 1 / 2/ 3;
+         background-color: #E1BEE7;
+         color: #4A148C;
+         display: flex;
+         justify-content: flex-start; 
+         align-items: center;
+         padding:0 25px;
+         font-size: 30px; 
+         font-weight: 900;
+         border-bottom: 4px solid #4A148C;
+         box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+         }
+    
+      .Sidebar {
+         grid-area: 2 / 1 / 3 / 2;
+         background-color: #F3E5F5; 
+         border-right: 3px solid #4A148C;
+         padding: 10px;
+         }
+       .Sidebar-Titulo {
+            font-size: 20px;
+            color: #4A148C;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #4A148C;
+        }
+
+        .menu-item {
+            padding: 12px;
+            color: #4A148C;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .menu-item:hover {
+            background-color: #4A148C;
+            color: white;
+        }
+
+        .Top-Central {
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: #FFFDE7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .card-mascota {
+            background: #FCE4EC;
+            padding: 40px;
+            border: 6px solid #F06292;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .Titulo-1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color:#F06292;
+        }
+
+       .btn-accion:hover {
+         background-color: #D81B60;
+             
+        }
+
+       
+        .Top-Inferior {
+            grid-area: 3 / 1 / 4 / 3;
+            background-color: #4A148C; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .Titulo-2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+           
+        }
+    </style>
+</body> 
+</html>
